@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WVTC Redesign V4 Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#08111f;color:#fff;overflow-x:hidden}
+.nav{position:fixed;top:15px;left:50%;transform:translateX(-50%);width:95%;max-width:1400px;padding:18px 30px;background:rgba(255,255,255,.08);backdrop-filter:blur(20px);border-radius:50px;display:flex;justify-content:space-between;align-items:center;z-index:999}
+.logo{font-size:32px;font-weight:800;color:#f4b400}
+.links{display:flex;gap:25px}.links a{text-decoration:none;color:#fff}
+.hero{height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1800') center/cover}
+.hero h1{font-size:5rem}
+.gold{color:#f4b400}
+.btn{padding:15px 30px;border-radius:35px;text-decoration:none;font-weight:700;margin:8px;display:inline-block}
+.primary{background:#f4b400;color:#000}
+.secondary{border:2px solid #fff;color:#fff}
+section{padding:90px 8%}
+.title{text-align:center;font-size:2.7rem;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(15px);padding:25px;border-radius:20px;transition:.4s}
+.card:hover{transform:translateY(-10px)}
+.counter{font-size:3rem;color:#f4b400;font-weight:800}
+.program{min-height:220px}
+.portal{display:grid;grid-template-columns:280px 1fr;border-radius:20px;overflow:hidden}
+.sidebar{background:#101827;padding:25px;line-height:2.4}
+.content{background:#162235;padding:25px}
+.mini{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:20px}
+.mini div{background:#22304a;padding:18px;border-radius:12px;text-align:center}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.step{background:#f4b400;color:#000;padding:20px;border-radius:15px;text-align:center;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.gallery img{width:100%;height:240px;object-fit:cover;border-radius:18px}
+.testimonial{font-style:italic}
+.partners{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.partner{padding:25px;background:#111c2e;border-radius:15px;text-align:center}
+.cta{text-align:center;padding:80px;background:linear-gradient(135deg,#f4b400,#ffcf40);color:#000;border-radius:30px}
+footer{background:#020617;padding:60px;text-align:center}
+.top{position:fixed;bottom:20px;right:20px;background:#f4b400;color:#000;border:none;padding:14px 18px;border-radius:50%;cursor:pointer}
+@media(max-width:768px){
+.hero h1{font-size:3rem}
+.links{display:none}
+.portal,.timeline,.partners,.mini{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="logo">WVTC</div>
+<div class="links">
+<a href="#">Home</a><a href="#">About</a><a href="#">Trades</a><a href="#">Admissions</a><a href="#">Portal</a><a href="#">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Build Your <span class="gold">Future</span></h1>
+<p>Premium Vocational Education Experience</p><br>
+<a class="btn primary" href="#">Apply Now</a>
+<a class="btn secondary" href="#">Campus Tour</a>
+</div>
+</section>
+
+<section>
+<h2 class="title">WVTC At A Glance</h2>
+<div class="grid">
+<div class="card"><div class="counter">5000+</div>Graduates</div>
+<div class="card"><div class="counter">25+</div>Trades</div>
+<div class="card"><div class="counter">95%</div>Employment Readiness</div>
+<div class="card"><div class="counter">40+</div>Industry Partners</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Featured Programmes</h2>
+<div class="grid">
+<div class="card program">💻 ICT & Software Development</div>
+<div class="card program">⚡ Electrical Engineering</div>
+<div class="card program">🔧 Mechanical Engineering</div>
+<div class="card program">☀ Solar Installation</div>
+<div class="card program">🏗 Construction Trades</div>
+<div class="card program">🏢 Office Administration</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Student Portal Dashboard</h2>
+<div class="portal">
+<div class="sidebar">Dashboard<br>Results<br>Attendance<br>Fees<br>Downloads<br>Messages</div>
+<div class="content">
+<h3>Welcome Student</h3>
+<div class="mini">
+<div>Results</div><div>Attendance</div><div>Fees</div><div>Downloads</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Admissions Journey</h2>
+<div class="timeline">
+<div class="step">Apply</div>
+<div class="step">Documents</div>
+<div class="step">Review</div>
+<div class="step">Acceptance</div>
+<div class="step">Registration</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Campus Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200">
+</div>
+</section>
+
+<section>
+<h2 class="title">Success Stories</h2>
+<div class="grid">
+<div class="card testimonial">"WVTC prepared me for industry."</div>
+<div class="card testimonial">"Excellent practical workshops."</div>
+<div class="card testimonial">"I found employment after graduation."</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Partners & Accreditation</h2>
+<div class="partners">
+<div class="partner">NTA</div>
+<div class="partner">NQA</div>
+<div class="partner">NSFAF</div>
+<div class="partner">Industry</div>
+<div class="partner">Employers</div>
+</div>
+</section>
+
+<section>
+<div class="cta">
+<h2>Ready To Join WVTC?</h2>
+<p>Start your journey toward a skilled and successful future.</p><br>
+<a class="btn primary" href="#">Apply Today</a>
+</div>
+</section>
+
+<footer>
+<h2>WVTC Premium Redesign V4</h2>
+<p>Modern UI Concept for Presentation & Pitching</p>
+</footer>
+
+<button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</body>
+</html>
